@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  pyspark-notebook:
+    image: jupyter/pyspark-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - C:\Users\Swift3\1sparkfile:/home/jovyan/work
+    environment:
+      - PYSPARK_DRIVER_PYTHON=jupyter
+      - PYSPARK_DRIVER_PYTHON_OPTS=notebook
+ 
